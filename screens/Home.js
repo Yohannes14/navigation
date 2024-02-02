@@ -16,7 +16,9 @@ const Home = () => {
                 <Header title="Home" onPress={() => refRBSheet.current.open()} />
 
             </View>
-            <BottomSheet bottomSheetRef={refRBSheet} />
+            <BottomSheet bottomSheetRef={refRBSheet}>
+                <Text>Hello</Text>
+            </BottomSheet>
         </SafeAreaView>
     )
 }
