@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import BottomTabNavigation from './BottomTabNavigation';
+import DrawerNavigation from './DrawerNavigation';
 const Stack = createNativeStackNavigator();
 
 const AppNavigation = () => {
@@ -10,7 +11,7 @@ const AppNavigation = () => {
                 screenOptions={{ headerShown: false }}
                 initialRouteName='Main'
             >
-                <Stack.Screen name='Main' component={BottomTabNavigation} />
+                <Stack.Screen name='Main' component={DrawerNavigation} />
 
             </Stack.Navigator>
         </NavigationContainer>
